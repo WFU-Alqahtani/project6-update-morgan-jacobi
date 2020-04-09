@@ -11,9 +11,22 @@ int main() {
 
     string filename;
    //read the file name of your dataset
-   ofstream myFile;
-   myFile.open ("NationalNames.csv");
-   myFile << "Opening file." << endl;
+    ifstream inFile;
+    inFile.open("../NationalNames.csv");   // calling data file
+    if (! inFile.is_open()) {    // making sure file opens
+        cout << "Could not open file." << endl;   // if file doesn't open...
+        return 1;   // ... 1 is returned, something bad happened
+    }
+
+    ofstream myFile;
+    myFile.open ("myFile.txt");
+    myFile << "Opening file." << endl;
+
+    // testing if myFile opened
+    if (! myFile.is_open()) {
+        cout << "Could not open file." << endl;   // if file doesn't open...
+        return 1;   //... 1 is returned, something bad happened
+    }
 
     vector<BabyNames> v;
 
@@ -22,13 +35,13 @@ int main() {
     vector <int> newVector(n);
         for (int x:newVector) {
             cout << x << " ";
-            return 0;
+        }
 
     // binary insertion sort
     insertionSort(v, v.size());
     int i = 1;
     int x;
-    while (i < length(LinkedList)) {
+    while (i < length(vector)) {
         x = LinkedList[i];
 
     }
