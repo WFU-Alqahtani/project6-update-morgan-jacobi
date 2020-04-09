@@ -66,8 +66,8 @@ void LinkedList::printList() {
 void LinkedList::InsertionSort() {
     Node* start = this->head;
     while (this->head->next != nullptr) {
-        if (head->item > ) {
-
+        if (head->item > head->item) {
+            head = start;
         }
     }
 }
