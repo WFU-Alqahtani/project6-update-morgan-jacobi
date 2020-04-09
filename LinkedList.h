@@ -15,17 +15,18 @@ public:
     //Constructors
     LinkedList();
     LinkedList(const LinkedList & list);
+    void swap(LinkedList& other);
 
     //Assignment Operator
-    LinkedList &operator=(const LinkedList & rhs);
+    LinkedList operator=(LinkedList & rhs);
 
     //Destructor
     ~LinkedList();
 
     //Functions. You may not need to use them all
-    void append(YourClass obj);
-    bool Delete (YourClass obj);
-    YourClass find (YourClass obj)
+    void push(BabyNames obj);
+    bool Delete (BabyNames obj);
+    BabyNames find (BabyNames obj);
     void printList();
     void InsertionSort();
 

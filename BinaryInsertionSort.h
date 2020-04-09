@@ -4,7 +4,7 @@
 #include <vector>
 using namespace std;
 
-int binarySearch(vector<YourClass> a, int item, int low, int high);
-void insertionSort(vector<YourClass> &a, int n);
+int binarySearch(vector<babyNames> a, int item, int low, int high);
+void insertionSort(vector<babyNames> &a, int n);
 
 #endif //BINARYINSERTIONSORT_H

@@ -10,12 +10,18 @@ int main() {
     string filename;
    //read the file name of your dataset
 
-    vector<YourClass> v;
+    vector<BabyNames> v;
 
     // populate the vector with the data from your data set
 
     // binary insertion sort
     insertionSort(v, v.size());
+    int i = 1;
+    int x;
+    while (i < length(LinkedList)) {
+        x = LinkedList[i];
+
+    }
 
     // check if sorted
     for (int i = 1; i < v.size(); i++) {
@@ -24,7 +30,7 @@ int main() {
 
     // print out sorted list
     for (int i = 0; i < v.size(); i++) {
-        //you should ovrride << to YourClass
+        //you should override << to YourClass
         cout << v[i] << endl;
     }
 

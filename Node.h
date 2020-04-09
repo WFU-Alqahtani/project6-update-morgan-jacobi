@@ -1,13 +1,18 @@
 #ifndef NODE_H
 #define NODE_H
+#include "BabyNames.h"
 
 class Node {
 public:
     // Node constructor
-    Node(YourClass v , Node* n = nullptr)
+    Node(BabyNames v , Node* n = nullptr)
     {
-        value = v;
+        item = v;
         next = n;
+    }
+    Node() {
+        this->item = BabyNames();
+        this->next = nullptr;
     }
 
     //Destructor
@@ -15,9 +20,23 @@ public:
         delete next;
     }
     friend class LinkedList;
+
+    Node GetNext() {
+        return *this->next;
+    }
+
+    bool operator != (Node* obj) {
+        return this->item != obj->item;
+    }
+
+    Node &operator =(const Node& obj) {
+        this->item = obj.item;
+        this->next = obj.next;
+    }
+
 private:
 
-    YourClass value;
+    BabyNames item;
     Node* next;
 
 };

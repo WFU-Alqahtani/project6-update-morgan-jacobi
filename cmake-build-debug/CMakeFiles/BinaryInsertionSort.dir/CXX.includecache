@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/annmorganjacobi/project6-update-morgan-jacobi/BabyNames.h
+iostream
+-
+
+/Users/annmorganjacobi/project6-update-morgan-jacobi/BinaryInsertionSort.cpp
+BinaryInsertionSort.h
+/Users/annmorganjacobi/project6-update-morgan-jacobi/BinaryInsertionSort.h
+
+/Users/annmorganjacobi/project6-update-morgan-jacobi/BinaryInsertionSort.h
+vector
+-
+
+/Users/annmorganjacobi/project6-update-morgan-jacobi/InsertionSort.cpp
+iostream
+-
+vector
+-
+cassert
+-
+BinaryInsertionSort.h
+/Users/annmorganjacobi/project6-update-morgan-jacobi/BinaryInsertionSort.h
+Node.h
+/Users/annmorganjacobi/project6-update-morgan-jacobi/Node.h
+
+/Users/annmorganjacobi/project6-update-morgan-jacobi/Node.h
+BabyNames.h
+/Users/annmorganjacobi/project6-update-morgan-jacobi/BabyNames.h
+
